@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SupawishHanmontree/run-package/main/resources/run-package.schema.json",
+  "commands": [
+    {
+      "name": "Dev Server",
+      "command": "npm run dev",
+      "icon": "server"
+    },
+    {
+      "name": "Build",
+      "command": "npm run build",
+      "icon": "tools"
+    }
+  ],
+  "packs": [
+    {
+      "name": "Dev & Build",
+      "mode": "parallel",
+      "commands": [
+        "Dev Server",
+        "Build"
+      ]
+    }
+  ]
+}
